@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cartHeader {
+    background-color: #133c55;
+    padding: 10px 20px;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  #cartHeaderElements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+  }
+  
+  #cartHeaderElements img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  
+  #navLinks ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+  }
+  
+  #navLinks ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    padding: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  /* ::after pseudo-element for underline effect */
+
+  #navLinks ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ffcc00;
+    transition: width 0.3s ease;
+  }
+  
+  /* Hover effect: expand the underline */
+
+  #navLinks ul li a:hover::after {
+    width: 100%;
+  }
+  
+  /* Active link: underline always visible */
+
+  #navLinks ul li a#active::after {
+    background-color: silver;
+    width: 100%;
+  }
+
+  #navLinks ul li a#active{
+    color: goldenrod;
+  }
+  

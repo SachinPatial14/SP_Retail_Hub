@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#proDetailsContainer {
+    display: flex;
+    margin-top: 20px;
+ }
+ 
+ #proDetailsContainer #proImage {
+     width: 40%;
+     height: 30%;
+     margin-right: 50px;
+     margin-left: 20px;
+     margin-top: 8px;
+     margin-bottom: 15px;
+     padding: 10px 12px;
+     border: 1px solid #cce7d0;
+     border-radius: 25px;
+     cursor: pointer;
+     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+ }
+ 
+ #proImage img {
+     width: 100%;
+     border-radius: 20px;
+     object-fit: cover;
+ } 
+ 
+ #proDetailsContainer #des {
+     width: 50%;
+     padding-top: 30px;
+ }
+ 
+ #des span {
+     font-size: 25px;
+     padding-bottom: 12px;
+     display: block;
+ }
+ 
+ #des h5 {
+     font-size: 18px;
+     font-weight: 600;
+     color: rgb(154, 150, 150);
+     margin-bottom: 10px;
+ }
+ 
+ #des h4 {
+     font-size: 19px;
+     font-weight: 700;
+     color: #10a89e;
+     margin-bottom: 20px;
+ }
+ 
+ #des h3 {
+     font-size: 20px;
+     font-weight: 500;
+     color: #f45c42;
+     margin-bottom: 10px;
+ }
+ 
+ #des button {
+     padding: 12px 20px;
+     background-color: #0b6e4f;
+     color: white;
+     font-size: 16px;
+     font-weight: 600;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     margin-top: 10px;
+ }
+ 
+ #des button:hover {
+     background-color: #073b34;
+ }
+ 
+ #des button:focus {
+     outline: none;
+ }
+ 
+ #des #buyNow {
+     margin-left: 10px;
+ }
+
+ /* review section */
+
+ #reviews {
+    margin: 30px auto;
+    width: 80%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#reviews h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #764134;
+    margin-bottom: 20px;
+}
+
+#reviewForm{
+    margin-top: 20px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#reviewForm label{
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#reviewForm input, #reviewForm select,
+#reviewForm textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#reviewForm button{
+    background-color: #0b6e4f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reviewForm button:hover{
+    background-color: #72a98f;
+}
+
+#yourReview{
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Review List Container */
+
+#reviewList {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#reviewItem {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#reviewItem:hover {
+    transform: translateY(-0.7px);
+}
+
+#reviewItem p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#reviewItem p strong {
+    color: #0b6e4f;
+    margin-right: 3px;
+}
+
+#reviewItem span{
+    margin-left: 3px;
+    color: #2d2a32;
+}
+
+#reviewItem #revname{
+    margin-left: 3px;
+    color: #001d3d;
+}
+
+#reviewItem p em {
+    color: #764134;
+    font-style: italic;
+}
+
+/* faq section */
+
+
+#faq h2 {
+    margin-left: 140px;
+    font-size: 2em;
+    color: #764134;
+    margin-bottom: 20px;
+  }
+  
+  #faqContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px;
+  }
+  
+  #faqContainer #showQuestionsBtn {
+    width: 25%;
+    padding: 7px;
+    background-color: #0b6e4f;
+    color: #cce7d0;
+    margin-right: 20px;
+    margin-left: 120px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #faqContainer #showQuestionsBtn:hover {
+    background-color: #306662;
+    cursor: pointer;
+  }
+  
+  #faqSection {
+    flex-direction: column;
+  }
+  
+  .hidden {
+display: none;
+  } 
+  
+  #faqQuestion {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    margin-left: 120px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #faqQuestion:hover {
+    transform: translateX(4px);
+  }
+  
+  #faqAnswer {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #d7f9f1;
+  }
+
+  #quesIcon{
+    color: #1f487e;
+  }
+
+  /* suggest product section */
+
+  #suggestProducts{
+    padding: 40px 80px;
+    text-align: centre;
+  }
+
+  #suggestProducts h2{
+    color: #764134;
+    margin-left: 42% ;
+  }
+
+  #suggestProducts p{
+    color: rgb(125, 118, 118);
+    font-size: 14px;  
+    margin-left: 38%;  
+    margin-top: 4px;
+  }
+
+  
+  #productGrid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+  
+  #productGrid #suggestionItem {
+    position: relative;
+    width: 23%;
+    min-width: 200px;
+    padding: 10px 20px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+    transition: 0.2s ease;
+  }
+  
+  #productGrid #suggestionItem:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+    transform: translateY(-8px);
+  }
+  
+  #productGrid #suggestionItem img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  #productGrid #suggestionItem #des {
+    text-align: start;
+    padding: 10px 0;
+  }
+  
+  #productGrid #suggestionItem #des span {
+    color: rgba(154, 150, 150);
+    font-size: 13px;
+  }
+  
+  #productGrid #suggestionItem #des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 15px;
+  }
+  
+  #productGrid #suggestionItem #des h4 {
+    padding-top: 7px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #368f8b;
+  }
+  
+  #productGrid #suggestionItem #des h3 {
+    padding-top: 7px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #e70e32;
+  }
+  
+  #productGrid #suggestionItem #wishDiv {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #productGrid #suggestionItem #wishDiv #wishIcon {
+    color: #6e7e85;
+  }
+  
+  #productGrid #suggestionItem #wishDiv #wishIcon:hover {
+    color: #ff3b30;
+  }
+  
+  #productGrid #suggestionItem:hover #wishDiv {
+    display: block;
+  }
+  
+  /* proDetails.css */
+
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalButtons #conBtn{
+  border: none;
+  background-color: #1f487e;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.modalButtons #closeBtn{
+  padding: 6px;
+  border: none;
+  background-color: rgb(187, 212, 222);
+  transition: background-color 0.3s ease;
+}
+
+
+.modalButtons #conBtn:hover{
+  background-color: #0b6e4f;
+  color: white;
+}
+
+.modalButtons #closeBtn:hover{
+  background-color: rgb(212, 66, 66);
+}
+
+
+
+  
+
+
+
+
+ 
